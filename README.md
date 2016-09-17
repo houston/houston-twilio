@@ -1,6 +1,6 @@
 # Houston::Twilio
 
-TODO: Summary of Houston Twilio.
+Allows Houston to receive texts via SMS and respond
 
 
 ## Installation
@@ -13,7 +13,9 @@ And in `config/main.rb`, add:
 
 ```ruby
 use :twilio do
-  # TODO: specify configuration options for Houston::Twilio here
+  sid ENV["HOUSTON_TWILIO_SID"]
+  token ENV["HOUSTON_TWILIO_TOKEN"]
+  number ENV["HOUSTON_TWILIO_NUMBER"]
 end
 ```
 

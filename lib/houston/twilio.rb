@@ -1,5 +1,6 @@
 require "houston/twilio/engine"
 require "houston/twilio/configuration"
+require "houston/twilio/client"
 
 module Houston
   module Twilio
@@ -9,6 +10,14 @@ module Houston
       @configuration ||= Twilio::Configuration.new
       @configuration.instance_eval(&block) if block_given?
       @configuration
+    end
+
+    def client
+      @client ||= Houston::Twilio::Client.new
+    end
+
+    def send(message, to:)
+      client.send_message(message, to: to)
     end
 
   end
