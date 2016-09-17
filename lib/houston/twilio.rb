@@ -33,7 +33,6 @@ module Houston
   #
   #    add_navigation_renderer :twilio do
   #      name "Twilio"
-  #      icon "fa-thumbs-up"
   #      path { Houston::Twilio::Engine.routes.url_helpers.twilio_path }
   #      ability { |ability| ability.can? :read, Project }
   #    end
@@ -43,7 +42,6 @@ module Houston
   #
   #    add_project_feature :twilio do
   #      name "Twilio"
-  #      icon "fa-thumbs-up"
   #      path { |project| Houston::Twilio::Engine.routes.url_helpers.project_twilio_path(project) }
   #      ability { |ability, project| ability.can? :read, project }
   #    end
