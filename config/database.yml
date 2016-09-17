@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: houston_twilio_development
+  host: localhost
+  prepared_statements: false
+
+test:
+  adapter: postgresql
+  encoding: utf8
+  database: houston_twilio_test
+  host: localhost
+  prepared_statements: false
