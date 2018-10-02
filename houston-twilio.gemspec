@@ -21,6 +21,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "houston-core", ">= 0.8.0.pre"
   spec.add_dependency "twilio-ruby", "~> 4.11.1"
 
-  spec.add_development_dependency "bundler", "~> 1.11.2"
+  spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake", "~> 10.0"
 end
